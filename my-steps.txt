@@ -144,7 +144,40 @@ branch 'main' set up to track 'origin/main'.
 
 
 ### Step 6
+cheri@Cheri-ASUS-Laptop MINGW64 ~/OneDrive/Desktop/unit1-git-practice (main)
+$ touch menu.txt
 
+cheri@Cheri-ASUS-Laptop MINGW64 ~/OneDrive/Desktop/unit1-git-practice (main)
+$ ls
+menu.txt  my-steps.txt  plants/  proteins/  sweets/  veggies/
+
+cheri@Cheri-ASUS-Laptop MINGW64 ~/OneDrive/Desktop/unit1-git-practice (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        menu.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+cheri@Cheri-ASUS-Laptop MINGW64 ~/OneDrive/Desktop/unit1-git-practice (main)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+cheri@Cheri-ASUS-Laptop MINGW64 ~/OneDrive/Desktop/unit1-git-practice (main)
+$ git add .
+warning: in the working copy of 'my-steps.txt', LF will be replaced by CRLF the next time Git touches it
+
+cheri@Cheri-ASUS-Laptop MINGW64 ~/OneDrive/Desktop/unit1-git-practice (main)
+$ git commit -m "startiing a menu"
+[main cf8e02f] startiing a menu
+ 2 files changed, 90 insertions(+), 28 deletions(-)
+ create mode 100644 menu.txt
 
 ### Step 7
 *** DO NOT RECORD STEP 7 ***
